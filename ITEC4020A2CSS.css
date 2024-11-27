@@ -258,7 +258,7 @@ hr {
 .bottom-navbar {
     background-color: black;
     width: 100%;
-    position: fixed;  /* Keeps it fixed at the bottom */
+    position: fixed;  
     bottom: 0;
     padding: 10px;
     text-align: center;
@@ -274,7 +274,7 @@ hr {
     height: 100%;
 }
 
-/* New styles for the question buttons and content */
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -318,9 +318,9 @@ hr {
 /* Styling for the Chart container */
 #performanceChart {
     margin-top: 40px;
-    background-color: #f4f4f4;  /* Optional: Add a light background color */
-    border: 1px solid #ccc;  /* Optional: Add border around the chart */
-    border-radius: 10px;  /* Optional: Round the corners */
+    background-color: #f4f4f4; 
+    border: 1px solid #ccc;  
+    border-radius: 10px;  
 }
 
 /* Optional: Add a margin above the chart */
@@ -331,13 +331,13 @@ h2 {
 }
 
 #bar-graph-container {
-    margin-top: 40px; /* Optional: Add space above the bar graph */
-    padding-bottom: 120px;  /* Adds space at the bottom of the bar graph */
+    margin-top: 40px; 
+    padding-bottom: 120px;  
 }
 
 #performanceChart {
     margin-top: 40px;
-    background-color: #f4f4f4;  /* Optional: Add a light background color */
-    border: 1px solid #ccc;  /* Optional: Add border around the chart */
-    border-radius: 10px;  /* Optional: Round the corners */
+    background-color: #f4f4f4;  
+    border: 1px solid #ccc;  
+    border-radius: 10px;  
 }
