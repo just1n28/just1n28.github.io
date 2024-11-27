@@ -315,7 +315,7 @@ hr {
     font-size: 18px;
 }
 
-/* Styling for the Chart container */
+
 #performanceChart {
     margin-top: 40px;
     background-color: #f4f4f4; 
@@ -323,7 +323,7 @@ hr {
     border-radius: 10px;  
 }
 
-/* Optional: Add a margin above the chart */
+
 h2 {
     margin-top: 40px;
     font-size: 24px;
