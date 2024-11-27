@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITEC 4020 Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="ITEC4020A2CSS.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="profilepicture.png" alt="Profile Picture" class="profile-picture">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="resume.pdf" class="nav-link">Click to download my resume</a></li>
+            </ul>
+
+            <ul class="nav-list-icons">
+                <li class="nav-icons-item"><a href="mailto:faresfarah2003@gmail.com"><img src="icon1.png" alt="Email"></a></li>
+                <li class="nav-icons-item"><a href="https://www.google.com/url?q=https%3A%2F%2Finstagram.com%2F_fxrs.f%3Figshid%3DYmMyMTA2M2Y%3D&sa=D&sntz=1&usg=AOvVaw15VlF9lzXe7LMBe09a90WR"><img src="icon2.png" alt="Instagram"></a></li>
+                <li class="nav-icons-item"><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffares-farah-b64a85238&sa=D&sntz=1&usg=AOvVaw2m3-iAs27QXLJdbjIlmX8t"><img src="icon3.png" alt="LinkedIn"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="introduction-section">
+        <h1>Introduction</h1>
+        <p>This project aims to explore the efficiency of ChatGPT in providing accurate, insightful, and timely responses across various domains, including History, Social Science, and Computer Security. By combining web development and ChatGPT's API capabilities, the goal is to analyze its performance using real-world questions, visualize results, and present them on an interactive website. This website serves as a platform to showcase the integration of modern technologies like MongoDB, Node.js, and Chart.js with a focus on technical evaluation and user engagement.</p>
+    </div>
+
+    <hr>
+
+    <div class="content">
+        <div class="image">
+            <img src="picture.png" alt="Personal Picture" class="picture">
+        </div>
+
+        <div class="text-block">
+            <h1>Welcome to my portfolio website!</h1>
+            <p>Hello! My name is Fares Farah and I am a York University IT Major. I work for my university as an Information Technology Assistant and I am aiming to have a successful career in the Information Technology field to pursue and fulfill my goal of becoming an IT Professional.</p>
+            <p>I have always been interested in the IT field in which I have had the opportunity to develop a better and deeper understanding of how technology can help, explain, guide, and describe problem-solving techniques to others in order to determine and fulfill their most appropriate technological needs. </p>
+            <p>On this website, you will be able to find where I have studied throughout my university years as well as additional information regarding my education.</p>
+            <p>You will also be able to find what sort of skills and abilities I have as an individual.</p>
+            <p>And lastly, you will be able to find out about my hobbies and interests in the About Me section of my website such as music and other interesting things.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <main class="main">
+        <div class="text-group">
+            <div class="text-item">
+                <img src="image1.jpg" alt="Image 1">
+                <div class="text-content">
+                    <p>My studies at York University started in 2021, I am working towards a Bachelor of Arts degree, which I am hoping to obtain in 2025. As I am majoring in IT in the LA&PS (Liberal Arts and Professional Studies) faculty, my degree is generalized, learning about the organizational aspects of the IT field which includes learning and applying different coding languages, studying different software and hardware, creating our own applications, and developing websites.</p>
+                </div>
+            </div>
+
+            <div class="text-item">
+                <div class="text-content1">
+                    <p>Working as an Information Technology Assistant at York University entails assisting any professor who is in need of technological assistance after their lecture. I am to go to wherever their lecture hall is, and check/fix/replace the computer so that it can be in good working condition. I also assist the CTS team with deployments, taking note of all the equipment we have and entering it into our database as well as making sure it gets sent to the right person at York University.</p>
+                </div>
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="contact-form">
+            <form method="post">
+                <fieldset>
+                    <legend>Let's get in touch!</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name..." required><br>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name..." required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email..." required><br>
+
+                    <label for="message">Message (Optional):</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter message (optional)..." required></textarea><br>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+        <hr>
+        
+        <!-- Buttons for each category -->
+        <div class="button-container">
+            <button id="get-random-history-question">Get Random History Question</button>
+            <button id="get-random-cs-question">Get Random Computer Security Question</button>
+            <button id="get-random-ss-question">Get Random Social Science Question</button>
+        </div>
+
+        <!-- Section to display the question, options, correct answer, and ChatGPT's answer -->
+        <div id="question-container">
+            <h2 id="question-text"></h2>
+            <ul id="answer-options">
+                <!-- Answer options will be populated here -->
+            </ul>
+            <p><strong>Correct Answer:</strong> <span id="correct-answer"></span></p>
+            <p><strong>ChatGPT’s Answer:</strong> <span id="chatgpt-answer"></span></p>
+        </div>
+
+        <!-- Divider -->
+        <hr>
+
+        <!-- Bar Graph Section -->
+        <h2>ChatGPT Performance Evaluation</h2>
+
+        <!-- Container for the bar graph -->
+        <div id="bar-graph-container">
+            <canvas id="performanceChart" width="800" height="400"></canvas>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            const data = {
+                labels: ['History', 'Computer Security', 'Social Science'],
+                datasets: [
+                    {
+                        label: 'Accuracy Percentage (%)',
+                        data: [80, 75, 90],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Average Response Time (ms)',
+                        data: [150, 200, 180],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            };
+
+            const options = {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: { beginAtZero: true },
+                    y1: {
+                        beginAtZero: true,
+                        position: 'right',
+                        grid: { drawOnChartArea: false }
+                    }
+                }
+            };
+
+            const performanceChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+
+            function getRandomQuestion(collection) {
+                $.get(`http://localhost:3000/random-question/${collection}`, function(data) {
+                    $('#question-text').text(data.question);
+                    $('#answer-options').empty();
+
+                    data.options.forEach(function(option, index) {
+                        $('#answer-options').append('<li>' + String.fromCharCode(65 + index) + ': ' + option + '</li>');
+                    });
+
+                    $('#correct-answer').text(data.correctAnswer);
+                    $('#chatgpt-answer').text(data.chatAnswer);
+                }).fail(function() {
+                    alert('Error fetching question.');
+                });
+            }
+
+            $('#get-random-history-question').click(function() {
+                getRandomQuestion('hQuestions');
+            });
+
+            $('#get-random-cs-question').click(function() {
+                getRandomQuestion('csQuestions');
+            });
+
+            $('#get-random-ss-question').click(function() {
+                getRandomQuestion('sQuestions');
+            });
+        </script>
+
+    </main>
+
+    <div class="bottom-navbar">
+        <div class="bottom-navbar-text">
+            © Fares Farah • All Rights Reserved
+        </div>
+    </div>
+
+</body>
+</html>
