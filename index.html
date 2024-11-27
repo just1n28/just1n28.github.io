@@ -9,15 +9,31 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        .button-container {
+        .bio-section {
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            justify-content: space-around;
+            margin: 20px;
         }
-        .button-container button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 16px;
+        .bio {
+            width: 30%;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .bio img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .bio h3 {
+            margin: 10px 0;
+        }
+        .bio p {
+            font-size: 14px;
+            line-height: 1.6;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -36,35 +52,42 @@
 
             <ul class="nav-list-icons">
                 <li class="nav-icons-item"><a href="mailto:faresfarah2003@gmail.com"><img src="icon1.png" alt="Email"></a></li>
-                <li class="nav-icons-item"><a href="https://www.google.com/url?q=https%3A%2F%2Finstagram.com%2F_fxrs.f%3Figshid%3DYmMyMTA2M2Y%3D&sa=D&sntz=1&usg=AOvVaw15VlF9lzXe7LMBe09a90WR"><img src="icon2.png" alt="Instagram"></a></li>
-                <li class="nav-icons-item"><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffares-farah-b64a85238&sa=D&sntz=1&usg=AOvVaw2m3-iAs27QXLJdbjIlmX8t"><img src="icon3.png" alt="LinkedIn"></a></li>
+                <li class="nav-icons-item"><a href="https://instagram.com/_fxrs.f"><img src="icon2.png" alt="Instagram"></a></li>
+                <li class="nav-icons-item"><a href="https://www.linkedin.com/in/fares-farah-b64a85238"><img src="icon3.png" alt="LinkedIn"></a></li>
             </ul>
         </nav>
     </header>
 
     <div class="introduction-section">
         <h1>Introduction</h1>
-        <p>This project aims to explore the efficiency of ChatGPT in providing accurate, insightful, and timely responses across various domains, including History, Social Science, and Computer Security. By combining web development and ChatGPT's API capabilities, the goal is to analyze its performance using real-world questions, visualize results, and present them on an interactive website. This website serves as a platform to showcase the integration of modern technologies like MongoDB, Node.js, and Chart.js with a focus on technical evaluation and user engagement.</p>
+        <p>This project aims to explore the efficiency of ChatGPT in providing accurate, insightful, and timely responses across various domains, including History, Social Science, and Computer Security. By combining web development and ChatGPT's API capabilities, the goal is to analyze its performance using real-world questions, visualize results, and present them on an interactive website.</p>
     </div>
 
     <hr>
 
-    <div class="content">
-        <div class="image">
-            <img src="picture.png" alt="Personal Picture" class="picture">
+    <!-- Bio Sections -->
+    <div class="bio-section">
+        <div class="bio">
+            <img src="person1.jpg" alt="Person 1">
+            <h3>Person 1</h3>
+            <p>Hi, I’m Person 1. I’m passionate about technology and innovation, with a background in software development and a strong interest in artificial intelligence. I enjoy solving problems and learning new tools.</p>
         </div>
 
-        <div class="text-block">
-            <h1>Welcome to my portfolio website!</h1>
-            <p>Hello! My name is Fares Farah and I am a York University IT Major. I work for my university as an Information Technology Assistant and I am aiming to have a successful career in the Information Technology field to pursue and fulfill my goal of becoming an IT Professional.</p>
-            <p>I have always been interested in the IT field in which I have had the opportunity to develop a better and deeper understanding of how technology can help, explain, guide, and describe problem-solving techniques to others in order to determine and fulfill their most appropriate technological needs. </p>
-            <p>On this website, you will be able to find where I have studied throughout my university years as well as additional information regarding my education.</p>
-            <p>You will also be able to find what sort of skills and abilities I have as an individual.</p>
-            <p>And lastly, you will be able to find out about my hobbies and interests in the About Me section of my website such as music and other interesting things.</p>
+        <div class="bio">
+            <img src="person2.jpg" alt="Person 2">
+            <h3>Person 2</h3>
+            <p>Hello, I’m Person 2! I specialize in data analysis and visualization. I love working on projects that involve creative thinking and technical expertise to make sense of complex datasets.</p>
+        </div>
+
+        <div class="bio">
+            <img src="person3.jpg" alt="Person 3">
+            <h3>Person 3</h3>
+            <p>Hey there! I’m Person 3. With a background in IT support and web development, I focus on creating user-friendly solutions and improving technical efficiency in various projects.</p>
         </div>
     </div>
 
     <hr>
+    
 
     <main class="main">
         <div class="text-group">
