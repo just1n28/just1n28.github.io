@@ -137,7 +137,7 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// Frontend JavaScript
+
 $(document).ready(function() {
     // Function to fetch random question from the backend
     function getRandomQuestion(collection) {
